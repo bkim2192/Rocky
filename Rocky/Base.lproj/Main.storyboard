@@ -56,6 +56,22 @@
                                 <rect key="frame" x="28" y="170" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-NG-hJG">
+                                <rect key="frame" x="125" y="92" width="304" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sD-hW-IHf">
+                                <rect key="frame" x="304" y="735" width="233" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="Reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qk5-Ql-bgI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -68,6 +84,11 @@
                     </view>
                     <connections>
                         <outlet property="computerChoice" destination="KQs-22-D6p" id="pMA-Ek-LHz"/>
+                        <outlet property="label" destination="Vji-NG-hJG" id="XeF-BJ-kgg"/>
+                        <outlet property="paperView" destination="Uk4-yi-dUt" id="rj8-4Y-z4d"/>
+                        <outlet property="rockView" destination="sN6-Vq-eiw" id="sV1-Ai-Uj0"/>
+                        <outlet property="scissorsView" destination="rGM-cd-AYb" id="pK5-pp-yfh"/>
+                        <outlet property="stackVIew" destination="oXB-f0-rh3" id="Sob-js-LRV"/>
                         <outlet property="yourChoice" destination="PhJ-uH-KHa" id="hu7-Uz-VOW"/>
                         <outletCollection property="Pics" destination="sN6-Vq-eiw" collectionClass="NSMutableArray" id="nq4-TV-gEq"/>
                     </connections>
